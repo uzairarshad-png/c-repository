@@ -13,7 +13,7 @@ float Payslip_02135252039(int ID, string emp_name, int  choice, float hours, flo
 	if (choice == 1) cout << "Designation: Manager" << endl;
 	if (choice == 2) cout << "Designation: Developer" << endl;
 	if (choice == 3)cout << "Designation: Clerk " << endl;
-	cout << "Hours Worked : " << ID << endl << endl;
+	cout << "Hours Worked : " << hours << endl << endl;
 	cout << "Salary: " << salary << endl;
 	cout << "Bonus: " << bonus << endl;
 	return salary + bonus;
