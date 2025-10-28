@@ -1,95 +1,53 @@
 #include<iostream>
 #include<string>
 using namespace std;
-float CalculateSalary_02135252039(int choice, float hours){
-	float salary;
-	if (choice==1)
-	{
-	salary = 1000*hours;
-	return salary;
-	}
-	else if (choice==2)
-	{
-	salary = 750*hours;
-	return salary;
-	}
-	else if (choice==3)
-	{
-	salary = 500*hours;
-	return salary;
-	}
+float CalculateSalary_02135252039(int choice, float hours) {
+	if (choice == 1) return 1000 * hours;
+	else if (choice == 2) return 750 * hours;
+	else if (choice == 3) return 500 * hours;
 }
-float Payslip_02135252039(int ID, string emp_name,int  choice, float hours, float salary, float bonus){
-	cout<<"=========================================================\n\t\tPAY SLIP\n=========================================================";
-	cout<<"\nEmpolyee ID: "<<ID<<endl;
-	cout<<"Empolyee Name: "<<emp_name<<endl;
-	if (choice==1)
-	{cout<<"Designation: Manager"<<endl;}
-	if (choice==2)
-	{ cout<<"Designation: Developer"<<endl;}
-	if (choice==3)
-	{cout<<"Designation: Clerk "<<endl;
-	}
-	cout<<"Hours Worked : "<<ID<<endl;
-	cout<<"\n Salary: "<<salary<<endl;
-	cout<<"Bonus: "<<bonus<<endl;
-	return salary+bonus;
+float Payslip_02135252039(int ID, string emp_name, int  choice, float hours, float salary, float bonus) {
+	cout << "=========================================================\n\t\tPAY SLIP\n=========================================================";
+	cout << "\nEmpolyee ID: " << ID << endl;
+	cout << "Empolyee Name: " << emp_name << endl;
+	if (choice == 1) cout << "Designation: Manager" << endl;
+	if (choice == 2) cout << "Designation: Developer" << endl;
+	if (choice == 3)cout << "Designation: Clerk " << endl;
+	cout << "Hours Worked : " << ID << endl << endl;
+	cout << "Salary: " << salary << endl;
+	cout << "Bonus: " << bonus << endl;
+	return salary + bonus;
 }
 int main()
 {
 	string emp_name, job_role;
 	int choice, ID;
 	float hours, bonus, salary, total_salary;
-	System: {
-	cout<<"Enter Employee ID [1234]: ";
-	cin>>ID;
-	cout<<"Enter Employee Name: ";
-	cin>>emp_name;
-	Designation:
-		{
-	
-	cout<<"Select Designation:\n\tPress 1 for Manager.\n\tPress 2 for Developer.\n\tPress 3 for Clerk.";}
-	
-	
-	Choice:
-	{
-	cout<<"\nPress Choice:  ";
-	cin>>choice;
-	}
-	if(choice<=0||choice>3){
-		goto Choice;
-	}
-	Hours:
-	{
-	cout<<"Enter hours worked: ";
-	cin>>hours;
-	}
-	if(hours<=0){
-		goto Hours;
-	}
-	salary=CalculateSalary_02135252039(choice,hours);
-	if (choice==1)
-	{
-	bonus=((salary*0.15)+salary);
-	}
-	if (choice==2)
-	{
-	bonus=((salary*0.10)+salary);
-	}
-	if (choice==3)
-	{
-	bonus=0;
-	}
-	total_salary= Payslip_02135252039(ID, emp_name, choice, hours, salary,bonus);
-	cout<<"Your Total Salary is "<<total_salary;
+	char a; //For Taking Choice from user to generate another Payslip
+    do{
+	cout << "Enter Employee ID [1234]: ";
+	cin >> ID;
+	cout << "Enter Employee Name: ";
+	cin >> emp_name;
+	cout << "Select Designation:\n\tPress 1 for Manager.\n\tPress 2 for Developer.\n\tPress 3 for Clerk." << endl;
+	do{
+	cout << "Press Choice:  ";
+		cin >> choice;
+	} while (choice <= 0 || choice > 3);
+	do{
+	cout << "Enter hours worked: ";
+	cin >> hours;
+	} while (hours <= 0);
+	salary = CalculateSalary_02135252039(choice, hours);
+	if (choice == 1) bonus = ((salary * 0.15) + salary);
+	if (choice == 2) bonus = ((salary * 0.10) + salary);
+	if (choice == 3) bonus = 0;
+	total_salary = Payslip_02135252039(ID, emp_name, choice, hours, salary, bonus);
+	cout << "Your Total Salary is " << total_salary;
+	cout << "\nDo you wish to Generate Another Pay slip(Y/N)?";
+	cin >> a;
 
-	}
-	string a;
-	cout<<"\nDo you wish to Generate Another Pay slip(Y/N)?";
-	cin>>a;
-	if(a=="Y"||a=="y") {
-		goto System;
-	}
-	return 0;
+	} while (a == 'Y'|| a == 'y');
 
+return 0;
 }
