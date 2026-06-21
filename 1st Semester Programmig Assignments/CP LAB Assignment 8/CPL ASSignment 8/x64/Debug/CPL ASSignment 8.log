@@ -1,0 +1,8 @@
+﻿  Task 1.cpp
+  Task 2.cpp
+  Generating Code...
+E:\Uzair Arshad\CPL ASSignment 8\Task 1.cpp(75,28): warning C4305: 'initializing': truncation from 'double' to 'float'
+E:\Uzair Arshad\CPL ASSignment 8\Task 1.cpp(75,34): warning C4305: 'initializing': truncation from 'double' to 'float'
+E:\Uzair Arshad\CPL ASSignment 8\Task 1.cpp(75,40): warning C4305: 'initializing': truncation from 'double' to 'float'
+E:\Uzair Arshad\CPL ASSignment 8\Task 1.cpp(75,46): warning C4305: 'initializing': truncation from 'double' to 'float'
+  CPL ASSignment 8.vcxproj -> E:\Uzair Arshad\CPL ASSignment 8\x64\Debug\CPL ASSignment 8.exe
