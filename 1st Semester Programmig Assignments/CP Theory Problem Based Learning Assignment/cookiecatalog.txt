@@ -1,0 +1,4 @@
+Chocolate Chip|50|12.99
+Oatmeal Raisin|50|16.99
+Butter Cookies|50|14.99
+Fudge Cookies|50|17.99

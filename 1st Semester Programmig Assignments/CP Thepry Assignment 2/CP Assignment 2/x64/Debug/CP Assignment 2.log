@@ -1,0 +1,4 @@
+﻿  Assignment.cpp
+E:\Uzair Arshad\CP Assignment 2\Assignment.cpp(44,25): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+E:\Uzair Arshad\CP Assignment 2\Assignment.cpp(50,19): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  CP Assignment 2.vcxproj -> E:\Uzair Arshad\CP Assignment 2\x64\Debug\CP Assignment 2.exe
