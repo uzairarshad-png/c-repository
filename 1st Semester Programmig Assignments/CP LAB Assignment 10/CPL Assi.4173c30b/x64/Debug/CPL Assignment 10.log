@@ -1,0 +1,5 @@
+﻿  Task 5.cpp
+  Task 6.cpp
+  Generating Code...
+E:\Uzair Arshad\CPL Assignment 10\Task 5.cpp(24,24): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  CPL Assignment 10.vcxproj -> E:\Uzair Arshad\CPL Assignment 10\x64\Debug\CPL Assignment 10.exe
